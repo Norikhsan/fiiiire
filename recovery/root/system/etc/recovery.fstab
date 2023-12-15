@@ -1,0 +1,13 @@
+# fstab
+/system                      system              erofs                       flags=display=system;logical;slotselect
+/system                      system              ext4                        flags=display=system;logical;slotselect
+/vendor                      vendor              erofs                       flags=display=vendor;logical;slotselect
+/vendor                      vendor              ext4                        flags=display=vendor;logical;slotselect
+/product                     product             erofs                       flags=display=product;logical;slotselect
+/product                     product             ext4                        flags=display=product;logical;slotselect
+
+
+
+/metadata                    /dev/block/by-name/md_udc            ext4              flags=display=metadata
+/data                        /dev/block/by-name/userdata          f2fs              flags=display=data
+/boot                        /dev/block/by-name/boot              emmc              flags=display=boot;slotselect
