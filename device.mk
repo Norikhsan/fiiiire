@@ -7,7 +7,7 @@
 
 LOCAL_PATH := device/xiaomi/fire
 
- Include GSI keys
+# Include GSI keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Virtual AB
