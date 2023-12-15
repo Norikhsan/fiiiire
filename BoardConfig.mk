@@ -128,7 +128,7 @@ TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
 
 # TWRP Configuration
-TW_DEVICE_VERSION := Norikhsan90
+#TW_DEVICE_VERSION := Norikhsan90
 TW_FRAMERATE := 60
 TW_THEME := portrait_hdpi
 TW_INCLUDE_NTFS_3G := true 
