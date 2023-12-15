@@ -16,7 +16,6 @@ AB_OTA_PARTITIONS += \
     system \
     vendor \
     product \
-    mi_ext \
     boot \
     vbmeta_vendor \
     vbmeta_system
@@ -83,7 +82,7 @@ TARGET_COPY_OUT_PRODUCT := product
 # Dynamic Partitions
 BOARD_SUPER_PARTITION_SIZE := 9126805504 
 BOARD_SUPER_PARTITION_GROUPS := xiaomi_dynamic_partitions
-BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product mi_ext
+BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product
 BOARD_XIAOMI_DYNAMIC_PARTITIONS_SIZE := 9122611200
 
 
