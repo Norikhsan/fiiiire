@@ -42,10 +42,10 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 	if [ "$1" = "$FDEVICE" ] || [  "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	        # Version / Maintainer infos
          	export TW_DEFAULT_LANGUAGE="en"
-		      export OF_MAINTAINER="Tapin Recovery Instraller"
-		      export FOX_VERSION=R12.1_0
-		      export FOX_BUILD_TYPE="Unofficial"
-          export FOX_TARGET_DEVICES="fire"
+		export OF_MAINTAINER="Tapin Recovery Instraller"
+		export FOX_VERSION=R12.1_0
+		export FOX_BUILD_TYPE="Unofficial"
+          	export FOX_TARGET_DEVICES="fire"
 	        export TARGET_DEVICE_ALT="fire"
 	        export LC_ALL="C"
 
@@ -54,8 +54,8 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 	        export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
   
 	        # OTA / DM-Verity / Encryption
-          export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=0
-          export OF_SUPPORT_ALL_PAYLOAD_OTA_UPDATES=1
+          	export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=0
+          	export OF_SUPPORT_ALL_PAYLOAD_OTA_UPDATES=1
 		      export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
 		      export OF_DISABLE_MIUI_OTA_BY_DEFAULT=1
 		      export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1	
