@@ -68,8 +68,8 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 		      export OF_NO_RELOAD_AFTER_DECRYPTION=1
 
 	        # Display / Leds
-		      export OF_SCREEN_H="2400"
-		      export OF_STATUS_H="100"
+		      export OF_SCREEN_H="2460"
+		      export OF_STATUS_H="109"
 		      export OF_STATUS_INDENT_LEFT=48
 		      export OF_STATUS_INDENT_RIGHT=48
 		      export OF_HIDE_NOTCH=1
