@@ -33,7 +33,7 @@ service gatekeeper-1-0 /system/bin/android.hardware.gatekeeper@1.0-service
     disabled
     seclabel u:r:recovery:s0
 
-service keymaster-4-1 /system/bin/android.hardware.keymaster@4.1-service.beanpod
+service keymaster-4-1-beanpod /system/bin/android.hardware.keymaster@4.1-service.beanpod
     interface android.hardware.keymaster@4.0::IKeymasterDevice default
     interface android.hardware.keymaster@4.1::IKeymasterDevice default
     user root
@@ -45,21 +45,21 @@ service keymaster-4-1 /system/bin/android.hardware.keymaster@4.1-service.beanpod
 on property:vendor.sys.listener.registered=true
     start teei_daemon
     start gatekeeper-1-0
-    start keymaster-4-1
+    start keymaster-4-1-beanpod
    
 on property:ro.crypto.state=unsupported
     stop teei_daemon
-    stop keymaster-4-1
+    stop keymaster-4-1-beanpod
     stop gatekeeper-1-0
 
 on property:ro.crypto.state=unencrypted
     stop teei_daemon
-    stop keymaster-4-1
+    stop keymaster-4-1-beanpod
     stop gatekeeper-1-0
 
 on property:twrp.all.users.decrypted=true
     stop teei_daemon
-    stop keymaster-4-1
+    stop keymaster-4-1-beanpod
     stop gatekeeper-1-0
     
 on boot
